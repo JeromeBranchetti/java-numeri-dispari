@@ -11,7 +11,6 @@ public class StampaNumeriDispari {
 		System.out.print("Quanto deve essere lunga la lista? : ");
 		int n = scan.nextInt();
 		int[] lista = new int[n];
-		int contaDispari = 0;
 		Random ran = new Random();
 		for ( int i = 0; i < lista.length; i++ ) {
 			lista[i] = ran.nextInt(100);
@@ -19,15 +18,10 @@ public class StampaNumeriDispari {
 		for (int j = 0; j < lista.length; j++) {
 			if (lista[j] % 2 != 0) {
 				System.out.println(lista[j]);
-				contaDispari += 1;
+				
 			}
 		}
-		if (contaDispari > 1 || contaDispari == 0) {
-			System.out.println("Ci sono " + contaDispari + " numeri dispari.");
-		}
-		else if (contaDispari == 1) {
-			System.out.println("C'è " + contaDispari + " numero dispari.");
-		}
+		
 		scan.close();
 		}
 		
