@@ -22,14 +22,11 @@ public class StampaNumeriDispari {
 				contaDispari += 1;
 			}
 		}
-		if (contaDispari > 1) {
+		if (contaDispari > 1 || contaDispari == 0) {
 			System.out.println("Ci sono " + contaDispari + " numeri dispari.");
 		}
 		else if (contaDispari == 1) {
 			System.out.println("C'è " + contaDispari + " numero dispari.");
-		}
-		else {
-			System.out.println("Non ci sono numeri dispari");
 		}
 		scan.close();
 		}
